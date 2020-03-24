@@ -9,23 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity_Third">
+        <activity android:name=".ActivityFour"></activity>
+        <activity android:name=".ActivityThird">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:scheme="http"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity_Second">
+        <activity android:name=".ActivitySecond">
             <intent-filter>
                 <action android:name=".ACTION_START" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name=".MY_CATEGORY" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity_First"
+            android:name=".ActivityFirst"
             android:label="@string/activity_first">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -3,11 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_Second">
+    android:orientation="vertical"
+    tools:context="com.example.activity002.ActivityThird"
+    >
     <Button
-        android:id="@+id/button_2"
+        android:id="@+id/button_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_second"/>
+        android:text="@string/button_third"/>
 
 </LinearLayout>

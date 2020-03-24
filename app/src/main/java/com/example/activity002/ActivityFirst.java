@@ -5,7 +5,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -14,39 +13,39 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class Activity_First extends AppCompatActivity {
+public class ActivityFirst extends AppCompatActivity {
     private static final String TAG = "Debug";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first);
-        Button button_first = findViewById(R.id.button_1);
+        Button buttonFirst = findViewById(R.id.button_1);
 
         /*这是Toast按钮
-        button_first.setOnClickListener(new View.OnClickListener() {
+        buttonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Activity_First.this, "You clicked Button 1", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ActivityFirst.this, "You clicked Button 1", Toast.LENGTH_SHORT).show();
             }
         });
 */
         /*结束按钮
-        button_first.setOnClickListener(new View.OnClickListener() {
+        buttonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
         });*/
-        //跳转Activity_Second
-/*        button_first.setOnClickListener(new View.OnClickListener() {
+        //跳转ActivitySecond
+/*        buttonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_first = new Intent(Activity_First.this, Activity_Second.class);
-                startActivity(intent_first);
+                Intent intentFirst = new Intent(ActivityFirst.this, ActivitySecond.class);
+                startActivity(intentFirst);
             }
         });*/
-        //用Intent跳转到Activity_Second
-/*        button_first.setOnClickListener(new View.OnClickListener() {
+        //用Intent跳转到ActivitySecond
+/*        buttonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(".ACTION_START");
@@ -55,7 +54,7 @@ public class Activity_First extends AppCompatActivity {
             }
         });*/
         //打开百度网页，http协议调用
-        /*button_first.setOnClickListener(new View.OnClickListener() {
+        /*buttonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -64,7 +63,7 @@ public class Activity_First extends AppCompatActivity {
             }
         });*/
         //打开拨号tele，拨打给10086
-        /*button_first.setOnClickListener(new View.OnClickListener() {
+        /*buttonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_DIAL);
@@ -73,31 +72,31 @@ public class Activity_First extends AppCompatActivity {
             }
         });*/
         //用Intent传递参数
-        /*button_first.setOnClickListener(new View.OnClickListener() {
+        /*buttonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String data = "hi, 1st man";
-                Intent intent = new Intent(Activity_First.this, Activity_Second.class);
+                Intent intent = new Intent(ActivityFirst.this, ActivitySecond.class);
                 intent.putExtra("extra_data", data);
                 startActivity(intent);
                 Log.d(TAG, "1st man~");
             }
         });*/
-        button_first.setOnClickListener(new View.OnClickListener() {
+        buttonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Activity_First.this, Activity_Second.class);
+                Intent intent = new Intent(ActivityFirst.this, ActivitySecond.class);
                 startActivityForResult(intent, 1);
             }
         });
     }
-
+    //创建menu视图
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-
+    //菜单1：add
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
@@ -111,7 +110,7 @@ public class Activity_First extends AppCompatActivity {
             }
             return true;
     }
-
+    //菜单2：Remove
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

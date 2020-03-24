@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">Activity_Demo</string>
-    <string name="button_first">Button_First</string>
-    <string name="button_second">Button_Second</string>
-    <string name="button_third">Button_Third</string>
-    <string name="activity_first">Activity_First</string>
+    <string name="app_name">ActivityDemo</string>
+    <string name="button_first">ButtonFirst</string>
+    <string name="button_second">ButtonSecond</string>
+    <string name="button_third">ButtonThird</string>
+    <string name="activity_first">ActivityFirst</string>
     <string name="item_add">Add</string>
     <string name="item_remove">Remove</string>
-    <string name="extra_key">extra_key</string>
+    <string name="extra_key">extraKey</string>
 
 </resources>
