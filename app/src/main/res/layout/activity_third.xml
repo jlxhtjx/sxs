@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.activity002.ActivityThird"
-    >
+    tools:context="com.example.activity002.ActivityThird">
+
     <Button
         android:id="@+id/button_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_third"/>
+        android:text="@string/button_third" />
 
 </LinearLayout>

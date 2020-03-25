@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 public class ActivityFirst extends AppCompatActivity {
     private static final String TAG = "Debug";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,16 +91,18 @@ public class ActivityFirst extends AppCompatActivity {
             }
         });
     }
+
     //创建menu视图
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+
     //菜单1：add
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.item_add:
                 Toast.makeText(this, "You clicked Add", Toast.LENGTH_SHORT).show();
                 break;
@@ -107,9 +110,10 @@ public class ActivityFirst extends AppCompatActivity {
                 Toast.makeText(this, "You clicked Remove", Toast.LENGTH_SHORT).show();
                 break;
             default:
-            }
-            return true;
+        }
+        return true;
     }
+
     //菜单2：Remove
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

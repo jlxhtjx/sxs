@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class ActivitySecond extends AppCompatActivity {
     private static final String TAG = "Debug";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
