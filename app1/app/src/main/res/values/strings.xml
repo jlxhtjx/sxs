@@ -7,5 +7,9 @@
     <string name="item_add">Add</string>
     <string name="item_remove">Remove</string>
     <string name="extra_key">extraKey</string>
-
+    <string name="app_name">ActivityLifeCycleTest</string>
+    <string name="normal_text">NormalText</string>
+    <string name="dialog_text">DialogText</string>
+    <string name="btn_jumpNormalAct">Start NormalActivity</string>
+    <string name="btn_jumpDialogAct">Start DialogActivity</string>
 </resources>

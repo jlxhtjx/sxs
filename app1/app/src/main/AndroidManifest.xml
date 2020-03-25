@@ -9,6 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".ActivityDialog"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".ActivityNormal" />
+        <activity android:name=".ActivityMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".ActivityFour"></activity>
         <activity android:name=".ActivityThird">
             <intent-filter>
@@ -32,11 +42,12 @@
         <activity
             android:name=".ActivityFirst"
             android:label="@string/activity_first">
-            <intent-filter>
+            <!-- day1's intent -->
+            <!-- <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter> -->
         </activity>
     </application>
 
