@@ -1,0 +1,2 @@
+rootProject.name='sxs'
+include ':app'
