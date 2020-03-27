@@ -16,6 +16,11 @@
         android:id="@+id/back_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Normal->Main" />
+        android:text="@string/normal_to_main" />
+    <Button
+        android:id="@+id/all_over"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/to_be_dead"/>
 
 </LinearLayout>

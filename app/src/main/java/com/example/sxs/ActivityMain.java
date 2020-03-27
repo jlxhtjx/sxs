@@ -23,21 +23,22 @@ public class ActivityMain extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(TAG, "Task id is "+getTaskId());
+        Log.d(TAG, "Task id is " + getTaskId());
         setContentView(R.layout.layout_main);
         if (savedInstanceState != null) {
             String tempData = savedInstanceState.getString("data_key");
             Log.d(TAG, tempData);
         }
         Button startNormalActivity = (Button) findViewById(R.id.start_normal_activity);
-        Button startDialogActivity = (Button) findViewById(R.id.start_dialog_activity);
         startNormalActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ActivityMain.this, ActivityNormal.class);
                 startActivity(intent);
+                Log.d(TAG, "Dead-Main-create");
             }
         });
+        Button startDialogActivity = (Button) findViewById(R.id.start_dialog_activity);
         startDialogActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,7 +62,6 @@ public class ActivityMain extends BaseActivity {
                 startActivity(intent);
             }
         });
-
 
 
     }

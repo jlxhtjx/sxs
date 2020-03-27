@@ -25,11 +25,21 @@ public class ActivityNormal extends BaseActivity {
                 startActivity(intent);
             }
         });
+        Button btn_toDead = findViewById(R.id.all_over);
+        btn_toDead.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ActivityCollector.finishAll();
+                Log.d(TAG, "Dead-Normal-finishAll");
+            }
+        });
     }
+
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.d(TAG, "onDestroy");
+        ActivityCollector.finishAll();
+        Log.d(TAG, "Dead-N-Destroy");
     }
 }

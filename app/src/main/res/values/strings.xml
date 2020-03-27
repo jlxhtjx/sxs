@@ -4,4 +4,6 @@
     <string name="dialog_text">This is a dialog activity</string>
     <string name="normal_button">Start NormalActivity</string>
     <string name="dialog_button">Start DialogActivity</string>
+    <string name="normal_to_main"><![CDATA[Normal->Main]]></string>
+    <string name="to_be_dead">一键闪退</string>
 </resources>

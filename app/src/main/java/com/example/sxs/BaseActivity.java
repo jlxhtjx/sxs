@@ -13,6 +13,15 @@ public class BaseActivity extends BelowActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, getClass().getSimpleName());
+        Log.d(TAG, "Dead-Base-create");
+        ActivityCollector.addActivity(this);
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "Dead-Base-Destroy");
+        ActivityCollector.removeActivity(this);
     }
 }
