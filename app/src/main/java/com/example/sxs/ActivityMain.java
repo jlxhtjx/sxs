@@ -9,7 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class ActivityMain extends AppCompatActivity {
+public class ActivityMain extends BaseActivity {
 
     private static final String TAG = "ActivityMain";
 
@@ -23,7 +23,7 @@ public class ActivityMain extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(TAG, "onCreate");
+        Log.d(TAG, "Task id is "+getTaskId());
         setContentView(R.layout.layout_main);
         if (savedInstanceState != null) {
             String tempData = savedInstanceState.getString("data_key");
@@ -45,6 +45,24 @@ public class ActivityMain extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button startStandardTest = findViewById(R.id.btn_stand);
+        startStandardTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityMain.this, ActivityMain.class);
+                startActivity(intent);
+            }
+        });
+        Button startSingleTopTest = findViewById(R.id.btn_singleTop);
+        startSingleTopTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityMain.this, ActivityNormal.class);
+                startActivity(intent);
+            }
+        });
+
+
 
     }
 
