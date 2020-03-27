@@ -62,6 +62,30 @@ public class ActivityMain extends BaseActivity {
                 startActivity(intent);
             }
         });
+        Button jumpToThread = findViewById(R.id.jump_toThreadAct);
+        jumpToThread.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityMain.this, ActivityThread.class);
+                startActivity(intent);
+            }
+        });
+        Button jumpToRelative1 = findViewById(R.id.to_relative1_layout);
+        jumpToRelative1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityMain.this, activity_relative_test.class);
+                startActivity(intent);
+            }
+        });
+        Button jumpToRelative2 = findViewById(R.id.to_relative2_layout);
+        jumpToRelative2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityMain.this, activity_relative_test2.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

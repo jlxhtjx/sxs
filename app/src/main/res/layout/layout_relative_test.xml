@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_relative_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="我是中间的按钮" />
+    <!--    相对布局默认左上，所以不用动也行-->
+    <Button
+        android:id="@+id/btn_left_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是左上的按钮" />
+
+    <Button
+        android:id="@+id/btn_right_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="我是右上的按钮" />
+
+    <Button
+        android:id="@+id/btn_bottem_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="我在左下角按钮" />
+
+    <Button
+        android:id="@+id/btn_right_bottem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="我是右下角的按钮" />
+
+
+</RelativeLayout>

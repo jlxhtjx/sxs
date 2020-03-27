@@ -6,4 +6,10 @@
     <string name="dialog_button">Start DialogActivity</string>
     <string name="normal_to_main"><![CDATA[Normal->Main]]></string>
     <string name="to_be_dead">一键闪退</string>
+    <string name="layout_btn_chargeText">Charge Text</string>
+    <string name="layout_btn_text">Hello sxs</string>
+    <string name="change_toNiceToMeetYou">Change Text</string>
+    <string name="hello_world">Hello world</string>
+    <string name="inputWhatYouWant">请输入你想要更改的内容</string>
+    <string name="jump_to_threadTest">Jump to ThreadTest</string>
 </resources>

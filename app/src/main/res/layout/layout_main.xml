@@ -29,11 +29,36 @@
         android:layout_height="wrap_content"
         android:text="Start singleTop test" />
 
+    <Button
+        android:id="@+id/jump_toThreadAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jump_to_threadTest" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/to_relative1_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Relative_1" />
+
+        <Button
+            android:id="@+id/to_relative2_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Relative_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:background="#FF0033"
         android:orientation="horizontal">
 
