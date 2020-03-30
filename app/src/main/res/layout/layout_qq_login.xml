@@ -20,17 +20,23 @@
             android:textSize="50sp" />
 
         <EditText
+            android:id="@+id/et_qqlogin_account"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="30dp"
-            android:hint="QQ号码/手机号/邮箱" />
+            android:hint="QQ号码/手机号/邮箱"
+            android:maxLines="1" />
 
         <EditText
+            android:id="@+id/et_qqlogin_passwd"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="密码" />
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:maxLines="1" />
 
         <Button
+            android:id="@+id/btn_qq_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -71,6 +77,6 @@
         android:text="登录即代表阅读并同意阅读条款"
         android:textColor="#00aaff"
         android:textSize="20sp" />
-
+    <!--    /data/data/com.example.sxs/code_cache/info.txt-->
 
 </RelativeLayout>

@@ -17,7 +17,7 @@ public class ActivityMain extends BaseActivity {
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
         String tempData = "Something you just typed";
-        outState.putString("data_ket", tempData);
+        outState.putString("data_key", tempData);
     }
 
     @Override
