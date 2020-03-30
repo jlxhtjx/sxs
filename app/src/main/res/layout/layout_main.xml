@@ -53,6 +53,22 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Relative_2" />
+
+        <Button
+            android:id="@+id/btn_toCalculator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="calculator" />
+
+        <Button
+            android:id="@+id/btn_qqLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="QQLogin" />
+
+
     </LinearLayout>
 
     <LinearLayout

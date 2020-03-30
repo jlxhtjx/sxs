@@ -86,6 +86,22 @@ public class ActivityMain extends BaseActivity {
                 startActivity(intent);
             }
         });
+        Button jumpToCalculator = findViewById(R.id.btn_toCalculator);
+        jumpToCalculator.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityMain.this, Activity_Calculator.class);
+                startActivity(intent);
+            }
+        });
+        Button jumpToQqLogin = findViewById(R.id.btn_qqLogin);
+        jumpToQqLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityMain.this, activity_qqLogin.class);
+                startActivity(intent);
+            }
+        });
 
 
     }
