@@ -16,16 +16,20 @@ public class ServiceFirst extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        System.out.println("Service is Created");
+        System.out.println("ADD1:Service is Created");
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        return super.onStartCommand(intent, flags, startId);
+//        return super.onStartCommand(intent, flags, startId);
+        System.out.println("ADD1:Service is Started");
+        return START_STICKY;
+
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
+        System.out.println("ADD1:Service is Stop.");
     }
 }

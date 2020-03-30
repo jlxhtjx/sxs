@@ -102,9 +102,18 @@ public class ActivityMain extends BaseActivity {
                 startActivity(intent);
             }
         });
+        Button btnStartSer = findViewById(R.id.jumpToService);
+        btnStartSer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityMain.this, ActivityService.class);
+                startActivity(intent);
+            }
+        });
 
 
     }
+
 
     @Override
     protected void onStart() {
