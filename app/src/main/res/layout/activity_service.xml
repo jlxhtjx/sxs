@@ -4,45 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityService"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".ActivityService">
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+
         <Button
             android:id="@+id/btn_start_ser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="start service"/>
+            android:text="start service" />
+
         <Button
             android:id="@+id/btn_stop_ser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="stop service"/>
+            android:text="stop service" />
 
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+
         <Button
             android:id="@+id/btn_bindBn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="绑定Service"/>
+            android:text="绑定Service" />
+
         <Button
             android:id="@+id/btn_unbindBn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="解绑Service"/>
+            android:text="解绑Service" />
+
         <Button
             android:id="@+id/btn_getSerStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Get Status"/>
+            android:text="Get Status" />
     </LinearLayout>
-
-
 
 
 </LinearLayout>
