@@ -19,7 +19,7 @@
         android:layout_below="@id/thread_input_text"
         android:text="@string/change_toNiceToMeetYou" />
 
-    <Button
+    <TextView
         android:id="@+id/thread_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

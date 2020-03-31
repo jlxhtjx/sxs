@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityService">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="about 疯狂安卓" />
+
+        <Button
+            android:id="@+id/btn_start_ser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="start service" />
+
+        <Button
+            android:id="@+id/btn_stop_ser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="stop service" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_bindBn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="绑定Service" />
+
+        <Button
+            android:id="@+id/btn_unbindBn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="解绑Service" />
+
+        <Button
+            android:id="@+id/btn_getSerStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Status" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="about第一行代码" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_MySer_str"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MyService-start" />
+
+        <Button
+            android:id="@+id/btn_MySer_stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MyService-stop" />
+
+        <Button
+            android:id="@+id/bind_MyService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="绑定MyService" />
+
+        <Button
+            android:id="@+id/unbind_MyService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="解绑MyService" />
+
+        <Button
+            android:id="@+id/start_intent_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IntentService" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

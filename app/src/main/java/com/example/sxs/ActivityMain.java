@@ -29,82 +29,71 @@ public class ActivityMain extends BaseActivity {
             String tempData = savedInstanceState.getString("data_key");
             Log.d(TAG, tempData);
         }
-        Button startNormalActivity = (Button) findViewById(R.id.start_normal_activity);
-        startNormalActivity.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ActivityMain.this, ActivityNormal.class);
-                startActivity(intent);
-                Log.d(TAG, "Dead-Main-create");
-            }
+        Button startNormalActivity = findViewById(R.id.start_normal_activity);
+        startNormalActivity.setOnClickListener(v -> {
+            Intent intent = new Intent(ActivityMain.this, ActivityNormal.class);
+            startActivity(intent);
+            Log.d(TAG, "Dead-Main-create");
         });
-        Button startDialogActivity = (Button) findViewById(R.id.start_dialog_activity);
-        startDialogActivity.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ActivityMain.this, ActivityDialog.class);
-                startActivity(intent);
-            }
+        Button startDialogActivity = findViewById(R.id.start_dialog_activity);
+        startDialogActivity.setOnClickListener(v -> {
+            Intent intent = new Intent(ActivityMain.this, ActivityDialog.class);
+            startActivity(intent);
         });
         Button startStandardTest = findViewById(R.id.btn_stand);
-        startStandardTest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ActivityMain.this, ActivityMain.class);
-                startActivity(intent);
-            }
+        startStandardTest.setOnClickListener(v -> {
+            Intent intent = new Intent(ActivityMain.this, ActivityMain.class);
+            startActivity(intent);
         });
         Button startSingleTopTest = findViewById(R.id.btn_singleTop);
-        startSingleTopTest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ActivityMain.this, ActivityNormal.class);
-                startActivity(intent);
-            }
+        startSingleTopTest.setOnClickListener(v -> {
+            Intent intent = new Intent(ActivityMain.this, ActivityNormal.class);
+            startActivity(intent);
         });
         Button jumpToThread = findViewById(R.id.jump_toThreadAct);
-        jumpToThread.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ActivityMain.this, ActivityThread.class);
-                startActivity(intent);
-            }
+        jumpToThread.setOnClickListener(v -> {
+            Intent intent = new Intent(ActivityMain.this, ActivityThread.class);
+            startActivity(intent);
         });
         Button jumpToRelative1 = findViewById(R.id.to_relative1_layout);
-        jumpToRelative1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ActivityMain.this, activity_relative_test.class);
-                startActivity(intent);
-            }
+        jumpToRelative1.setOnClickListener(v -> {
+            Intent intent = new Intent(ActivityMain.this, activity_relative_test.class);
+            startActivity(intent);
         });
         Button jumpToRelative2 = findViewById(R.id.to_relative2_layout);
-        jumpToRelative2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ActivityMain.this, activity_relative_test2.class);
-                startActivity(intent);
-            }
+        jumpToRelative2.setOnClickListener(v -> {
+            Intent intent = new Intent(ActivityMain.this, activity_relative_test2.class);
+            startActivity(intent);
         });
         Button jumpToCalculator = findViewById(R.id.btn_toCalculator);
-        jumpToCalculator.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ActivityMain.this, Activity_Calculator.class);
-                startActivity(intent);
-            }
+        jumpToCalculator.setOnClickListener(v -> {
+            Intent intent = new Intent(ActivityMain.this, Activity_Calculator.class);
+            startActivity(intent);
         });
         Button jumpToQqLogin = findViewById(R.id.btn_qqLogin);
-        jumpToQqLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ActivityMain.this, activity_qqLogin.class);
-                startActivity(intent);
-            }
+        jumpToQqLogin.setOnClickListener(v -> {
+            Intent intent = new Intent(ActivityMain.this, activity_qqLogin.class);
+            startActivity(intent);
+        });
+        Button btnStartSer = findViewById(R.id.jumpToService);
+        btnStartSer.setOnClickListener(v -> {
+            Intent intent = new Intent(ActivityMain.this, ActivityService.class);
+            startActivity(intent);
+        });
+        Button btnMySer = findViewById(R.id.jumpToMySer);
+        btnMySer.setOnClickListener(v -> {
+            Intent intent = new Intent(ActivityMain.this, MySerActivity.class);
+            startActivity(intent);
+        });
+        Button btnBroadcast = findViewById(R.id.jumpToBroadcast);
+        btnBroadcast.setOnClickListener(v -> {
+            Intent intent = new Intent(ActivityMain.this, ActivityBroadcast.class);
+            startActivity(intent);
         });
 
 
     }
+
 
     @Override
     protected void onStart() {
