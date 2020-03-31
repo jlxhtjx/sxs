@@ -90,6 +90,11 @@ public class ActivityMain extends BaseActivity {
             Intent intent = new Intent(ActivityMain.this, ActivityBroadcast.class);
             startActivity(intent);
         });
+        Button jumpToCrazySerBind = findViewById(R.id.jumpToCrazyServiceBind);
+        jumpToCrazySerBind.setOnClickListener(v -> {
+            Intent intent = new Intent(ActivityMain.this, ActivityServiceBind.class);
+            startActivity(intent);
+        });
 
 
     }

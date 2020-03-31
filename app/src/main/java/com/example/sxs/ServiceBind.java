@@ -7,10 +7,17 @@ import android.os.IBinder;
 
 
 public class ServiceBind extends Service {
+    //    疯狂安卓---ServiceBind
     private int count;
     private boolean quit;
     private MyBinder binder = new MyBinder();
 
+
+    class MyBinder extends Binder {
+        public int getCount() {
+            return ServiceBind.this.count;
+        }
+    }
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -18,11 +25,6 @@ public class ServiceBind extends Service {
         return binder;
     }
 
-    class MyBinder extends Binder {
-        public int getCount() {
-            return ServiceBind.this.count;
-        }
-    }
 
     @Override
     public void onCreate() {

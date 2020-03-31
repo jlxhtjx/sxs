@@ -15,7 +15,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-//这是广播的MainActivity
+
 public class ActivityBroadcast extends AppCompatActivity {
 
     private IntentFilter intentFilter;
@@ -31,7 +31,7 @@ public class ActivityBroadcast extends AppCompatActivity {
         networkChangeReceiver = new NetworkChangeReceiver();
         registerReceiver(networkChangeReceiver, intentFilter);
 
-//        这里的广播无法自定义？why？03-31-14:55
+//        这里的广播无法自定义？why？03-31-14:55（第一行代码的原因）
         Button btnMyBroadcast = (Button) findViewById(R.id.my_broadcast);
         btnMyBroadcast.setOnClickListener(new View.OnClickListener() {
             @Override
