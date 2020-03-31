@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sxs">
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 需要开机接收信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 需要开机接收信息 -->
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
@@ -19,7 +20,7 @@
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.example.sxs.MY_BROADCAST" />
+                <action android:name="com.example.sxs.MyBroadcastReceiver" />
             </intent-filter>
         </receiver>
         <receiver
