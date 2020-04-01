@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-public class Activity_Calculator extends BaseActivity {
+public class CalculatorActivity extends BaseActivity {
 
     private static final String TAG = "Activity_Calculator";
 
@@ -15,7 +15,7 @@ public class Activity_Calculator extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.calculator);
+        setContentView(R.layout.layout_calculator);
     }
 
     public void oneOnClick(View view) {

@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 
-public class ActivityDialog extends BaseActivity {
+public class DialogActivity extends BaseActivity {
     private static final String TAG = "ActivityDialog";
 
     @Override

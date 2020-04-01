@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.util.Log;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
 public class BaseActivity extends BelowActivity {
     private static final String TAG = "BaseActivity";
@@ -14,7 +13,7 @@ public class BaseActivity extends BelowActivity {
         super.onCreate(savedInstanceState);
         Log.d(TAG, getClass().getSimpleName());
         Log.d(TAG, "Dead-Base-create");
-        ActivityCollector.addActivity(this);
+        CollectorActivity.addActivity(this);
 
     }
 
@@ -22,6 +21,6 @@ public class BaseActivity extends BelowActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.d(TAG, "Dead-Base-Destroy");
-        ActivityCollector.removeActivity(this);
+        CollectorActivity.removeActivity(this);
     }
 }

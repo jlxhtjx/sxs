@@ -1,14 +1,12 @@
 package com.example.sxs;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class ActivityNormal extends BaseActivity {
+public class NormalActivity extends BaseActivity {
 
     private static final String TAG = "ActivityNormal";
 
@@ -21,7 +19,7 @@ public class ActivityNormal extends BaseActivity {
         btn_backMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ActivityNormal.this, ActivityDialog.class);
+                Intent intent = new Intent(NormalActivity.this, DialogActivity.class);
                 startActivity(intent);
             }
         });
@@ -29,7 +27,7 @@ public class ActivityNormal extends BaseActivity {
         btn_toDead.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ActivityCollector.finishAll();
+                CollectorActivity.finishAll();
                 Log.d(TAG, "Dead-Normal-finishAll");
             }
         });
@@ -39,7 +37,7 @@ public class ActivityNormal extends BaseActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        ActivityCollector.finishAll();
+        CollectorActivity.finishAll();
         Log.d(TAG, "Dead-N-Destroy");
     }
 }

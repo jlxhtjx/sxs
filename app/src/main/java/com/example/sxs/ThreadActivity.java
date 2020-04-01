@@ -14,7 +14,7 @@ import android.widget.TextView;
 import android.os.Bundle;
 
 //第一行代码p342
-public class ActivityThread extends BaseActivity implements View.OnClickListener {
+public class ThreadActivity extends BaseActivity implements View.OnClickListener {
 
     private TextView text;
     private static final String TAG = "ActivityThread";

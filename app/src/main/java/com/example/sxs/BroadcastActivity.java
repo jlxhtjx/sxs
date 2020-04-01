@@ -16,7 +16,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 
-public class ActivityBroadcast extends AppCompatActivity {
+public class BroadcastActivity extends AppCompatActivity {
 
     private IntentFilter intentFilter;
     private static final String TAG = "ActivityBroadcast";
@@ -25,7 +25,7 @@ public class ActivityBroadcast extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_broadcast);
+        setContentView(R.layout.layout_broadcast);
         intentFilter = new IntentFilter();
         intentFilter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
         networkChangeReceiver = new NetworkChangeReceiver();

@@ -15,7 +15,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class activity_qqLogin extends BaseActivity {
+public class QQLoginActivity extends BaseActivity {
 
     private static final String TAG = "activity_qqLogin";
     private EditText account;

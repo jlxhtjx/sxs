@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ActivityBroadcast">
+    tools:context=".BroadcastActivity">
 
     <Button
         android:id="@+id/my_broadcast"

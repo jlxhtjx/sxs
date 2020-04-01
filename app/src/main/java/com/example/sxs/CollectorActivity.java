@@ -6,7 +6,7 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ActivityCollector {
+public class CollectorActivity {
     private static final String TAG = "ActivityCollector";
     public static List<Activity> activities = new ArrayList<>();
 
